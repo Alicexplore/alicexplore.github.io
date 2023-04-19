@@ -1,0 +1,678 @@
+@import url('https://fonts.cdnfonts.com/css/apercu');
+@import url('https://fonts.cdnfonts.com/css/abigate-desgo');
+@import url('https://fonts.cdnfonts.com/css/montreal');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2; 
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+h1 {
+    font-size: 1.7vw; 
+    font-family: "apercu", sans-serif;
+    color: #222222;
+}
+
+.logoonleft {
+    display: none;
+}
+
+header {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+header h4 {
+    position: absolute;
+    margin-left:3vw;
+    margin-top: 2.1vw;
+    font-size: 1.6vw;
+    color: #222222;
+    font-family: "apercu", sans-serif;
+    z-index: 3;
+    display: inline-block;
+}
+
+.logoleft {
+    margin-left: 2vw;
+    margin-top: 1.8vw;
+    display: inline-block;
+}
+
+.intro {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #222222;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 3;
+}
+
+.logo {
+    font-family: "apercu", sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-top: 7vw;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 3;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+    z-index: 3;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+    z-index: 3;
+}
+
+.span2 {
+    position: absolute;
+    margin-top: 9.5vw;
+    margin-left: 6vw;
+    font-size: 10vw;
+    text-align: left;
+    font-family: "apercu", sans-serif;
+    font-weight: bold;
+    line-height: 8.5vw; 
+    color: #222222;
+    z-index: 1;
+}
+
+.span3 {
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: 64vw;
+    font-size: 1vw;
+    text-align: left;
+    font-family: "apercu", sans-serif;
+    font-weight: bold;
+    line-height: 1vw; 
+    color: #222222;
+    z-index: 1;
+}
+
+.span4 {
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: 81vw;
+    font-size: 1vw;
+    padding: center;
+    text-align: right;
+    font-family: "apercu", sans-serif;
+    font-weight: bold;
+    line-height: 1vw; 
+    color: #222222;
+    z-index: 1;
+}
+
+.span5 {
+    position: absolute;
+    margin-top: 17vw;
+    margin-left: 82vw;
+    font-size: 1vw;
+    padding: center;
+    text-align: right;
+    font-family: "apercu", sans-serif;
+    font-weight: bold;
+    line-height: 1vw; 
+    color: #222222;
+    z-index: 1;
+}
+
+.numberone {
+    position: absolute;
+    margin-top: -27vw;
+    margin-left: 6vw;
+    font-size: 2vw;
+    text-align: left;
+    font-family: "apercu", sans-serif;
+    font-style: italic;
+    color: #222222;
+    z-index: 1; 
+}
+
+.numbertwo {
+    position: absolute;
+    margin-top: -20.5vw;
+    margin-left: 6vw;
+    font-size: 2vw;
+    text-align: left;
+    font-family: "apercu", sans-serif;
+    font-style: italic;
+    color: #222222;
+    z-index: 1; 
+}
+
+.alicetitle {
+    position: absolute;
+    margin-top: 50vw;
+    margin-right: 4.5vw;
+    font-size: 10vw;
+    text-align: right;
+    font-family: "apercu", sans-serif;
+    font-weight: bold;
+    line-height: 8.5vw; 
+    color: #222222;
+    z-index: 1;
+}
+
+.alicetitle2 {
+    position: absolute;
+    margin-top: -35vw;
+    margin-left: 8.5vw;
+    font-size: 4vw;
+    text-align: left;
+    font-family: "apercu", sans-serif;
+    font-weight: 200;
+    line-height: 8.5vw; 
+    color: #222222;
+    z-index: 1;
+}
+
+.alicetitle3 {
+    position: absolute;
+    margin-top: 11vw;
+    margin-left: 47vw;
+    font-size: 10vw;
+    font-family: "apercu", sans-serif;
+    font-weight: bold; 
+    color: #222222;
+    z-index: 1;
+}
+
+.alicephoto {
+    position: absolute;
+    width: 30%;
+    margin-top: 2.5vw;
+    margin-left: 6vw;
+    padding: center;
+    z-index: 1;
+}
+
+.span6 {
+    margin-top: -30.5vw;
+    margin-left: 44.5vw;
+    text-align: justify;
+    font-size: 1.8vw;
+    padding: center;
+    text-align: left;
+    font-family: "apercu", sans-serif;
+    /* font-weight: bold; */
+    line-height: 2.5vw; 
+    color: #222222;
+    z-index: 1;
+}
+
+.span7 {
+    position: absolute;
+    font-family: "apercu", sans-serif;
+    font-size: 13vw;
+    font-weight: 100;
+    margin-top: -22vw;
+    margin-left: 17vw;
+}
+.span7:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+
+.span8 {
+    position: absolute;
+    margin-top: 1vw;
+    margin-left: 44.5vw;
+    font-size: 1.8vw;
+    padding: center;
+    text-align: left;
+    font-family: "apercu", sans-serif;
+    /* font-weight: bold; */
+    line-height: 2.5vw; 
+    color: #222222;
+    z-index: 1;
+    margin-bottom: 15vw;
+}
+
+.logo_ab {
+    position: absolute;
+    width: 40%;
+    margin-top:10vw;
+    margin-left: 2vw;
+}
+
+.footer {
+    font-family: "apercu", sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    margin-bottom: 2vw; 
+    margin-top: 10vw;
+}
+
+.arrowtitle {
+    margin-top: 2.4vw;
+    margin-left: 0vw;
+    transform: rotate(134.5deg);
+}
+
+.plus {
+    position: absolute;
+    font-family: "apercu", sans-serif;
+    font-size: 13vw;
+    font-weight: 100;
+    margin-top: 10vw;
+    margin-left: 85vw;
+}
+
+.plus:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+
+.desktop {
+    display: none;
+}
+
+.linksresponsiv {
+    display: none;
+}
+
+.hand {
+    position: absolute;
+    margin-top: -32.5vw;
+    margin-left: 63vw; 
+    transition: transform 3s ease-in-out;
+  }
+  
+.hand:hover {
+    transform: rotateY(360deg);
+    transition: transform 3s ease-in-out;
+}
+
+.links {
+    word-spacing: 2.8vw;
+    text-align: center;
+    margin-left: 71vw;
+    margin-top: -2.5vw;
+    color: #222222;
+}
+
+.link {
+    font-weight: bold;
+    color: #222222;
+    font-size: 1vw;
+    font-family: "apercu", sans-serif;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 0px;
+    background-color: #222222;
+    bottom: 0;
+    left: 0;
+    transform-origin: top;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.link:hover::before {
+    transform-origin: top;
+    transform: scaleX(1);
+  }
+
+.contact {
+    text-align: right;
+    font-family: "apercu", sans-serif;
+    line-height: 1.7vw;
+    font-size: 1.5vw;
+    margin-top: 33vw;
+    margin-left: 87vw;
+    font-weight: bold;
+    color: #222222;
+    position: absolute;
+}
+
+.contactlink {
+    position: relative;
+    font-family: "apercu", sans-serif;
+    line-height: 1.6vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #222222;
+    
+}
+
+.contactlink:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2.1px;
+    border-radius: 0px;
+    background-color: #222222;
+    bottom: -0;
+    left: 0;
+    transform-origin: top;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.contactlink:hover::before {
+   
+    transform-origin: top;
+    transform: scaleX(1);
+} 
+
+.arrow {
+    width: 20%;
+}
+
+.rights {
+    position: absolute;
+    font-family: "apercu", sans-serif;
+    font-size: 0.8vw;
+    line-height: 0.7vw;
+    margin-top: -0.5vw;
+    margin-left: 3.3vw;
+    font-weight: bold;
+    color: #222222;
+    text-align: left;
+}
+
+.arrowmini {
+    max-width: 100%;
+    max-height: 100%;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.littlearrowlink {
+    width: 6%;
+}
+
+/*///////////////////////////////////////////////////////////////////////////  CARDS  /////////////////////////////////////////////////////////////////////////*/
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*///////////////////////////////////////////////////////////////////////////   FLEX PROJECTS  ///////////////////////////////////////////////////////////////////////////////////////*/
+
+*,
+:before,
+:after { 
+  box-sizing: border-box;
+}
+
+
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateY(50%);
+  }
+  90% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  background-color: #222222;
+  transition: all .3s ease-in-out;
+}
+
+.card__link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.card__header {
+  position: relative;
+}
+
+.card__header-title {
+  margin: 0 0 .25em;
+  color: white;
+  font-family: "apercu", sans-serif;
+  font-size: 2vw;
+}
+
+.card__header-meta {
+  margin: 0;
+  color: #999;
+}
+  
+.card:hover {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////   MEDIA QUERIES   ///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+@media (max-width: 600px) {
+    
+
+    h1 {
+        font-size: 5vw; 
+        font-family: "apercu", sans-serif;
+        color: #222222;
+        align-items: center;
+        margin-top: 6vw;
+    }
+
+    header {
+        display: none;
+    }
+
+    .logoonleft {
+        display: none;
+    }
+
+    .linksresponsiv {
+        display: inline;
+        word-spacing: 2.8vw;
+        text-align: center;
+        margin-top: 68vw;
+        margin-left: 10vw;
+        color: #222222;
+        position: absolute;
+    }
+    
+    .linkresponsiv {
+        font-weight: bold;
+        color: #222222;
+        font-size: 3vw;
+        font-family: "apercu", sans-serif;
+    }
+
+    .container .popup {
+        display: none;
+      }
+    
+    .span2 {
+        margin-top: 15vw;
+        margin-left: 9vw;
+        font-size: 14vw;
+        text-align: left;
+        font-family: "apercu", sans-serif;
+        font-weight: bold; 
+        line-height: 12.5vw; 
+        color: #222222;
+        position: absolute;
+    }
+
+    .span3 {
+        position: absolute;
+        margin-top: 140.5vw;
+        margin-left: 10vw;
+        font-size: 2vw;
+        text-align: left;
+        font-family: "apercu", sans-serif;
+        font-weight: bold;
+        line-height: 2.3vw; 
+        color: #222222;
+        z-index: 1;
+    }
+    
+    .span4 {
+        position: absolute;
+        margin-top: 148vw;
+        margin-left: 10vw;
+        font-size: 2vw;
+        padding: center;
+        text-align: left;
+        font-family: "apercu", sans-serif;
+        font-weight: bold;
+        line-height: 2.3vw; 
+        color: #222222;
+        z-index: 1;
+    }
+
+    .plus {
+        display: none;
+    }
+    
+    .plus:hover {
+        display: none;
+    }
+
+    .span6 {
+        display: none;
+    }
+
+    .span8 {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .alicetitle {
+        display: none;
+    }
+
+    .logo_ab {
+        display: none;
+    }
+
+    .numberone {
+        display: none;
+    }
+    
+    .arrowtitle {
+        position: absolute;
+        margin-top: 3.5vw;
+    }
+
+    .myname {
+        display: none;
+    }
+
+    .hand {
+        position: absolute;
+        margin-top: 100vw;
+        margin-left: 33vw;  
+        width: 60%;
+        transition: transform 3s ease-in-out;
+        }
+    
+    .hand:hover {
+        transform: rotateY(360deg);
+        transition: transform 3s ease-in-out;
+    }
+
+    .contact {
+        position: absolute;
+        margin-top: 140vw;
+        margin-left: 54vw;
+    }
+
+    .contactlink {
+        position: relative;
+        font-family: "apercu", sans-serif;
+        color: #222222; 
+        text-align: right;
+        font-family: "apercu", sans-serif;
+        line-height: 6vw;
+        font-size: 6.5vw;
+        font-weight: bold;
+        color: #222222;
+        
+    }
+    
+    .contactlink:before{
+        display: none;
+    }
+    
+    .contactlink:hover::before {
+       display: none;
+    } 
+    
+    .littlearrowlink {
+        width: 6%;
+    }
+
+
+}
+
